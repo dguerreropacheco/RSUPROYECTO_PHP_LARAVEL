@@ -58,10 +58,13 @@ Aplicación web desarrollada con <strong>PHP (Laravel)</strong> orientada a la g
 
 ## ▶️ Cómo ejecutar el proyecto
 
-git clone <URL_DEL_REPOSITORIO>
-cd nombre-del-proyecto
-composer install
-cp .env.example .env
-php artisan key:generate
-php artisan migrate
-php artisan serve
+- git clone <URL_DEL_REPOSITORIO>
+- cd nombre-del-proyecto
+- composer install
+- cp .env.example .env
+- php artisan key:generate
+- php artisan migrate
+- php artisan serve
+
+
+---
