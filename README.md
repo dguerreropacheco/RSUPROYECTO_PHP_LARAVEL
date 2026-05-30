@@ -31,7 +31,7 @@ Aplicación web desarrollada con <strong>PHP (Laravel)</strong> orientada a la g
 ## ⚙️ Stack tecnológico
 
 - **Backend:** PHP – Laravel  
-- **Base de datos:** MySQL  
+- **Base de datos:** SQLite  
 - **Arquitectura:** MVC  
 - **Herramientas:** Git, Composer  
 
