@@ -54,5 +54,11 @@ return new class extends Migration {
                 $table->boolean('activo')->default(true);
             });
         }
+
+        if (!Schema::hasColumn('colores', 'activo')) {
+            Schema::table('colores', function (Blueprint $table) {
+                $table->boolean('activo')->default(true);
+            });
+        }
     }
 };

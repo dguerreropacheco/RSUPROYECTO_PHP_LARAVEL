@@ -2,94 +2,94 @@
 
 @push('styles')
 <style>
-.badge-presente {
-    background-color: #28a745;
-    color: white;
-}
+    .badge-presente {
+        background-color: #28a745;
+        color: white;
+    }
 
-.badge-ausente {
-    background-color: #dc3545;
-    color: white;
-}
+    .badge-ausente {
+        background-color: #dc3545;
+        color: white;
+    }
 
-.badge-tardanza {
-    background-color: #ffc107;
-    color: #212529;
-}
+    .badge-tardanza {
+        background-color: #ffc107;
+        color: #212529;
+    }
 
-.badge-permiso {
-    background-color: #17a2b8;
-    color: white;
-}
-    
-.badge-entrada-registrada {
-    background-color: #3f6791; 
-    color: white;
-}
+    .badge-permiso {
+        background-color: #17a2b8;
+        color: white;
+    }
+        
+    .badge-entrada-registrada {
+        background-color: #3f6791; 
+        color: white;
+    }
 
-.badge-salida-registrada {
-    background-color: #28a745;
-    color: white;
-}
+    .badge-salida-registrada {
+        background-color: #28a745;
+        color: white;
+    }
 
-.badge-salida-falta {
-    background-color: #dc3545;
-    color: white;
-}
+    .badge-salida-falta {
+        background-color: #dc3545;
+        color: white;
+    }
 
-.select2-container .select2-selection--single {
-    border: 1px solid #ced4da !important;
-    border-radius: 4px !important;
-    height: 38px !important;
-    display: flex;
-    align-items: center;
-}
+    .select2-container .select2-selection--single {
+        border: 1px solid #ced4da !important;
+        border-radius: 4px !important;
+        height: 38px !important;
+        display: flex;
+        align-items: center;
+    }
 
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: #495057 !important;
-    line-height: 36px !important;
-}
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        color: #495057 !important;
+        line-height: 36px !important;
+    }
 
-.modal-header {
-    background-color: #3f6791;
-    color: #fff;
-}
+    .modal-header {
+        background-color: #3f6791;
+        color: #fff;
+    }
 
-.modal-header .btn-close,
-.modal-header .close {
-    background: none;
-    border: none;
-    color: #fff !important;
-    opacity: 1;
-    font-size: 1.4rem;
-}
+    .modal-header .btn-close,
+    .modal-header .close {
+        background: none;
+        border: none;
+        color: #fff !important;
+        opacity: 1;
+        font-size: 1.4rem;
+    }
 
-.modal-header .btn-close:hover,
-.modal-header .close:hover {
-    color: #f8f9fa !important;
-}
+    .modal-header .btn-close:hover,
+    .modal-header .close:hover {
+        color: #f8f9fa !important;
+    }
 
-.form-row {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 15px;
-}
+    .form-row {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
 
-.form-row .form-group {
-    flex: 1;
-    margin-bottom: 0;
-}
+    .form-row .form-group {
+        flex: 1;
+        margin-bottom: 0;
+    }
 
-.btn-filtrar {
-    background-color: #17a2b8;
-    color: white;
-    border: none;
-}
+    .btn-filtrar {
+        background-color: #17a2b8;
+        color: white;
+        border: none;
+    }
 
-.btn-filtrar:hover {
-    background-color: #138496;
-    color: white;
-}
+    .btn-filtrar:hover {
+        background-color: #138496;
+        color: white;
+    }
 </style>
 @endpush
 
@@ -168,6 +168,7 @@
                                     <th>ACCIÓN</th>
                                 </tr>
                             </thead>
+                            
                             <tbody>
                                 @forelse($asistencias as $asistencia)
                                 <tr>
@@ -233,6 +234,7 @@
                                 </tr>
                                 @endforelse
                             </tbody>
+                        
                         </table>
                     </div>
                 </div>
@@ -350,6 +352,41 @@
 
 @push('scripts')
 <script>
+
+
+$(window).on('load', function() {
+    // Esperamos a que TODOS los recursos (imágenes, scripts, etc.) hayan cargado
+    setTimeout(function() {
+        if ($.fn.DataTable.isDataTable('#tablaAsistencias')) {
+            $('#tablaAsistencias').DataTable().destroy();
+        }
+
+        $('#tablaAsistencias').DataTable({
+            destroy: true,
+        autoWidth: false,
+        language: {
+            "sProcessing": "Procesando...",
+            "sLengthMenu": "Mostrar _MENU_ registros",
+            "sZeroRecords": "No se encontraron resultados",
+            "sEmptyTable": "Ningún dato disponible en esta tabla",
+            "sInfo": "Mostrando _START_ al _END_ de _TOTAL_ registros",
+            "sInfoEmpty": "Mostrando 0 al 0 de 0 registros",
+            "sInfoFiltered": "(filtrado de _MAX_ total)",
+            "sSearch": "Buscar:",
+            "oPaginate": {
+                "sFirst": "Primero",
+                "sLast": "Último",
+                "sNext": "Siguiente",
+                "sPrevious": "Anterior"
+            }
+        },
+        columnDefs: [
+            { "orderable": false, "targets": 7 }
+        ],
+        order: [[2, 'desc']]
+    }, 200); 
+});
+
 $(document).ready(function() {
     $('.select2').select2({
         dropdownParent: $('#modalAsistencia'),
@@ -357,30 +394,29 @@ $(document).ready(function() {
     });
 
     let tabla = $('#tablaAsistencias').DataTable({
+        destroy: true,
+        autoWidth: false,
         language: {
             "sProcessing": "Procesando...",
             "sLengthMenu": "Mostrar _MENU_ registros",
             "sZeroRecords": "No se encontraron resultados",
             "sEmptyTable": "Ningún dato disponible en esta tabla",
-            "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-            "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-            "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+            "sInfo": "Mostrando _START_ al _END_ de _TOTAL_ registros",
+            "sInfoEmpty": "Mostrando 0 al 0 de 0 registros",
+            "sInfoFiltered": "(filtrado de _MAX_ total)",
             "sSearch": "Buscar:",
-            "sLoadingRecords": "Cargando...",
-            "sPaginate": {
+            "oPaginate": {
                 "sFirst": "Primero",
                 "sLast": "Último",
                 "sNext": "Siguiente",
                 "sPrevious": "Anterior"
             }
         },
-        pageLength: 10,
-        order: [[2, 'desc']],
         columnDefs: [
-            // Ahora la columna de acciones es la 7 (contando desde 0)
-            { orderable: false, targets: 7 } 
-        ]
+            { "orderable": false, "targets": 7 } 
+        order: [[2, 'desc']]
     });
+
 
     $('#registrosPorPagina').on('change', function() {
         tabla.page.len($(this).val()).draw();
