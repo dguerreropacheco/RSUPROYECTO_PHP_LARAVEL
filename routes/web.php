@@ -133,7 +133,6 @@ Route::middleware([
         Route::get('funciones-activas', [FuncionController::class, 'getActivas'])->name('funciones.activas');
         Route::get('conductores-ayudantes', [FuncionController::class, 'getConductoresYAyudantes'])->name('funciones.conductores-ayudantes');
         
-          // Personal ✅ ESTAS SON LAS RUTAS QUE USA LA VISTA
           /*
     Route::get('personal', [PersonalController::class, 'index'])->name('personal.personal.index');
     Route::post('personal', [PersonalController::class, 'store'])->name('personal.personal.store');
@@ -150,7 +149,7 @@ Route::middleware([
     */
      // Rutas principales CRUD
    
-        // PERSONAL ✅ RUTAS CORREGIDAS
+        // PERSONAL  RUTAS CORREGIDAS
         Route::prefix('personal')->name('personal.')->group(function () {
             // Rutas principales CRUD
             Route::get('/', [PersonalController::class, 'index'])->name('index');

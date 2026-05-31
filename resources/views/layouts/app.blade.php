@@ -70,9 +70,7 @@
                         <span class="d-none d-md-inline ml-1">    {{ Auth::user()->name }} </span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-user mr-2"></i> Mi Perfil
-                        </a>
+                        
                         <div class="dropdown-divider"></div>
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
