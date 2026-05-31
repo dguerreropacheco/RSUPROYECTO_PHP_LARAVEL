@@ -129,7 +129,6 @@
         
         .form-control:focus {
             border-color: #2ecc71;
-            box-shadow: 0 0 0 0.2rem rgba(46, 204, 113, 0.25);
         }
         
         .custom-checkbox {
@@ -219,10 +218,8 @@
         <div class="login-left">
             <i class="fas fa-recycle"></i>
             <h2>Sistema de Gestión RSU</h2>
-            <p>Plataforma integral para la gestión de residuos sólidos urbanos del distrito de José Leonardo Ortiz</p>
-            <div class="location-badge">
-                <i class="fas fa-map-marker-alt"></i> José Leonardo Ortiz, Chiclayo
-            </div>
+            <p>Plataforma integral para la gestión de residuos sólidos urbanos del distrito de José Leonardo Ortiz, Chiclayo</p>
+           
         </div>
         
         <!-- Lado Derecho -->
