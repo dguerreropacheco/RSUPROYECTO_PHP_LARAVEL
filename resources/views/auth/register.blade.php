@@ -98,13 +98,9 @@
             <h2>Registro de Usuario</h2>
             <p>Únase al sistema de gestión de Residuos Sólidos Urbanos de JLO.</p>
         </div>
-
         <div class="login-right">
             <div class="login-form-wrapper">
-                <h3>Crear cuenta</h3>
-                <p>Complete el formulario para registrarse en el sistema.</p>
-
-                
+                <h3 style="text-align: center; margin-top: 20px">Crear cuenta</h3>
 
                 <form method="POST" action="{{ route('register') }}">
                     @csrf
@@ -114,21 +110,27 @@
                             <i class="fas fa-user"></i>
                             <input type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus placeholder="Nombre completo">
                         </div>
+                        @error('name') <small class="text-danger">El nombre es requerido.</small> @enderror
                     </div>
+
                     <div class="form-group">
                         <label>Correo Electrónico</label>
                         <div class="input-group">
                             <i class="fas fa-envelope"></i>
                             <input type="email" class="form-control" name="email" value="{{ old('email') }}" required placeholder="ejemplo@jlo.gob.pe">
                         </div>
+                        @error('email') <small class="text-danger">Correo inválido o ya registrado.</small> @enderror
                     </div>
+
                     <div class="form-group">
                         <label>Contraseña</label>
                         <div class="input-group">
                             <i class="fas fa-lock"></i>
                             <input type="password" class="form-control" name="password" required placeholder="********">
                         </div>
+                        @error('password') <small class="text-danger">La contraseña no coincide o es muy corta.</small> @enderror
                     </div>
+
                     <div class="form-group">
                         <label>Confirmar Contraseña</label>
                         <div class="input-group">
