@@ -35,7 +35,7 @@
         
         .login-left {
             flex: 1;
-            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+            background:  #27ae60 ;
             padding: 40px;
             display: flex;
             flex-direction: column;
@@ -144,7 +144,7 @@
         .btn-login {
             width: 100%;
             padding: 14px;
-            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+            background: #27ae60;
             border: none;
             border-radius: 10px;
             color: white;
