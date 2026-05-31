@@ -31,7 +31,6 @@
             background: white;
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
         }
         
         .login-left {
@@ -49,7 +48,6 @@
         .login-left i {
             font-size: 80px;
             margin-bottom: 20px;
-            animation: float 3s ease-in-out infinite;
         }
         
         @keyframes float {
