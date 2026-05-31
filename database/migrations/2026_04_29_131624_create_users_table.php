@@ -20,7 +20,7 @@ return new class extends Migration
                 $table->text('two_factor_secret')->nullable();
                 $table->text('two_factor_recovery_codes')->nullable();
                 $table->time('two_factor_confirmed_at')->nullable();
-                $table->string('remember_token', 100)->nullable();
+                $table->string('remember_token', 100);
                 $table->unsignedBigInteger('current_team_id');
                 $table->string('profile_photo_path', 2048);
                 
