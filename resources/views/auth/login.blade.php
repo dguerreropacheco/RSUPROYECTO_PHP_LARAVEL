@@ -205,9 +205,6 @@
                             <i class="fas fa-envelope"></i>
                             <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" value="{{ old('email') }}" placeholder="usuario@jlo.gob.pe" required autofocus autocomplete="username">
                         </div>
-                        @error('email')
-                            <small class="text-danger">{{ $message }}</small>
-                        @enderror
                     </div>
                     <div class="form-group">
                         <label for="password">Contraseña</label>
@@ -215,9 +212,6 @@
                             <i class="fas fa-lock"></i>
                             <input type="password" class="form-control @error('password') is-invalid @enderror" id="password" name="password" placeholder="Ingrese su contraseña" required autocomplete="current-password">
                         </div>
-                        @error('password')
-                            <small class="text-danger">{{ $message }}</small>
-                        @enderror
                     </div>
                    
                     <button type="submit" class="btn-login">
@@ -227,14 +221,7 @@
                         <div class="forgot-password">
                             <span class="text-muted" style="font-size: 14px;">¿No tiene una cuenta?</span>
                             <a href="{{ route('register') }}">
-                                <i class="fas fa-user-plus"></i> Regístrese aquí
-                            </a>
-                        </div>
-                    @endif
-                    @if (Route::has('password.request'))
-                        <div class="forgot-password">
-                            <a href="{{ route('password.request') }}">
-                                <i class="fas fa-key"></i> ¿Olvidó su contraseña?
+                                <i class="fas fa-user"></i> Regístrese aquí
                             </a>
                         </div>
                     @endif
