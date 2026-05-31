@@ -176,7 +176,6 @@ Route::middleware([
     Route::delete('contratos/{contrato}', [ContratoController::class, 'destroy'])->name('contratos.destroy');
     Route::patch('contratos/{contrato}/toggle-activo', [ContratoController::class, 'toggleActivo'])->name('contratos.toggle-activo');
     
-    // ✅ AGREGAR ESTAS RUTAS NUEVAS
     Route::post('contratos/{contrato}/terminar', [ContratoController::class, 'terminar'])->name('contratos.terminar');
     Route::get('contratos-vigentes', [ContratoController::class, 'getVigentes'])->name('contratos.vigentes');
     Route::get('contratos-por-vencer', [ContratoController::class, 'getPorVencer'])->name('contratos.por-vencer');
@@ -219,7 +218,7 @@ Route::middleware([
         Route::delete('/grupospersonal/{grupoPersonal}/destroy', [GruposPersonalController::class, 'destroy'])->name('grupospersonal.destroy');
     
 
-// MÓDULO DE PROGRAMACIÓN (Preparado para futuro)
+// MÓDULO DE PROGRAMACIÓN 
     // ========================================
     
 
@@ -260,7 +259,7 @@ Route::get('/programacion/{programacion}/show', [ProgramacionesController::class
 // Gestión de Cambios - Modificación Masiva
 Route::get('/cambios', [ProgramacionesController::class, 'indexCambios'])->name('cambios.index');
 
-    // ✅ NUEVA RUTA - Agregar esta línea
+    // NUEVA RUTA - 
 Route::get('/dashboard/programacion/{id}/data', [DashboardController::class, 'getProgramacionData'])
     ->name('dashboard.programacion.data');
     Route::put('/dashboard/programacion/{id}/update-con-cambios', [DashboardController::class, 'updateConCambios'])
@@ -295,25 +294,4 @@ Route::prefix('mantenimiento')->name('admin.mantenimiento.')->middleware(['auth'
 });
 
 
-
-    // ========================================
-    // MÓDULO DE PERSONAL (Preparado para futuro)
-    // ========================================
-    // Route::prefix('personal')->group(function () {
-    //     // Aquí irán las rutas del módulo de personal
-    // });
-
-    // ========================================
-    // MÓDULO DE ZONAS (Preparado para futuro)
-    // ========================================
-    // Route::prefix('zonas')->group(function () {
-    //     // Aquí irán las rutas del módulo de zonas
-    // });
-
-    // ========================================
-    // MÓDULO DE PROGRAMACIÓN (Preparado para futuro)
-    // ========================================
-    // Route::prefix('programacion')->group(function () {
-    //     // Aquí irán las rutas del módulo de programación
-    // });
 });
