@@ -67,7 +67,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="dropdown" href="#">
                         <i class="far fa-user"></i>
-                        <span class="d-none d-md-inline ml-1">Grupo 09</span>
+                        <span class="d-none d-md-inline ml-1">Auth::user()->name</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                         <a href="#" class="dropdown-item">
@@ -103,7 +103,7 @@
                         <i class="fas fa-user-circle fa-2x text-white"></i>
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Grupo 09</a>
+                        <a href="#" class="d-block">Auth::user()->name</a>
                     </div>
                 </div>
 

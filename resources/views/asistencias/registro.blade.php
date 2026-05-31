@@ -243,7 +243,7 @@
             </form>
 
             <div class="footer-text">
-                <p>Sistema de Gestión RSU - Grupo 09</p>
+                <p>Sistema de Gestión RSU</p>
             </div>
         </div>
     </div>
