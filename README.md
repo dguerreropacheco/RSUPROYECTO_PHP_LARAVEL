@@ -12,10 +12,9 @@ Proyecto académico web desarrollada con <strong>PHP (Laravel)</strong> orientad
 
 ##  Impacto del proyecto
 
-- Digitalización del control de residuos  
-- Mejora en el seguimiento de operaciones (recolección, mantenimiento, personal)  
-- Organización de información para la toma de decisiones  
-- Enfoque en sostenibilidad y gestión ambiental  
+- Mejora en el seguimiento de operaciones.  
+- Organización de información para la toma de decisiones.
+- Enfoque en sostenibilidad y gestión ambiental.
 
 ---
 
@@ -24,6 +23,7 @@ Proyecto académico web desarrollada con <strong>PHP (Laravel)</strong> orientad
 - Modelado de base de datos relacional 
 - Implementación de migraciones y arquitectura MVC.
 - Desarrollo de backend utilizando Laravel para funcionalidades como vehículos, asistencia,  vacaciones, programaciones de rutas.
+- Estandarización de plantillas.
 - Integración y despliegue de la aplicación. 
 
 ---
