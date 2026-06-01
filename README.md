@@ -72,7 +72,7 @@ Proyecto académico web desarrollada con <strong>PHP (Laravel)</strong> orientad
 
 - El enlace de la aplicación es: https://rsuproyectophplaravel-production.up.railway.app
 
-<img width="1706" height="778" alt="image" src="https://github.com/user-attachments/assets/07fdac21-4ef8-4557-a6f7-92e3eadd0e2f" />
+<img width="1726" height="746" alt="image" src="https://github.com/user-attachments/assets/0d6d2447-61ea-48ad-8ede-f1b0454d5da5" />
 
 
 -Puede acceder, registrarse y navegar por el proyecto.
