@@ -203,7 +203,7 @@
                         <label for="email">Correo Electrónico</label>
                         <div class="input-group">
                             <i class="fas fa-envelope"></i>
-                            <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" value="{{ old('email') }}" placeholder="usuario@jlo.gob.pe" required autofocus autocomplete="username">
+                            <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" value="{{ old('email') }}" placeholder="Ingrese su correo" required autofocus autocomplete="username">
                         </div>
                     </div>
                     <div class="form-group">

@@ -117,7 +117,7 @@
                         <label>Correo Electrónico</label>
                         <div class="input-group">
                             <i class="fas fa-envelope"></i>
-                            <input type="email" class="form-control" name="email" value="{{ old('email') }}" required placeholder="ejemplo@jlo.gob.pe">
+                            <input type="email" class="form-control" name="email" value="{{ old('email') }}" required placeholder="ejemplo@gmail.com">
                         </div>
                         @error('email') <small class="text-danger">Correo inválido o ya registrado.</small> @enderror
                     </div>
