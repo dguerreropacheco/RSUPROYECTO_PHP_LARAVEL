@@ -70,7 +70,7 @@ Proyecto académico web desarrollada con <strong>PHP (Laravel)</strong> orientad
 <img width="1190" height="530" alt="image" src="https://github.com/user-attachments/assets/25f8785a-5b7c-484c-bb2a-4b79f10d8a2e" />
 
 
-- El enlace de la aplicación es: https://rsuproyectophplaravel-production.up.railway.app/login
+- El enlace de la aplicación es: https://rsuproyectophplaravel-production.up.railway.app
 
 <img width="1706" height="778" alt="image" src="https://github.com/user-attachments/assets/07fdac21-4ef8-4557-a6f7-92e3eadd0e2f" />
 
