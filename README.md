@@ -5,12 +5,12 @@
 <h1 align="center">Sistema de Gestión de Residuos Sólidos (RSU)</h1>
 
 <p align="center">
-Aplicación web desarrollada con <strong>PHP (Laravel)</strong> orientada a la gestión eficiente de residuos sólidos, como parte de una iniciativa de <strong>Responsabilidad Social Universitaria (RSU)</strong>.
+Proyecto académico web desarrollada con <strong>PHP (Laravel)</strong> orientada a la gestión eficiente de residuos sólidos, como parte de una iniciativa de <strong>Responsabilidad Social Universitaria (RSU)</strong> en equipo para el curso de TÓPICOS AVANZADOS EN DESARROLLO DE SOFTWARE.
 </p>
 
 ---
 
-## 🎯 Impacto del proyecto
+##  Impacto del proyecto
 
 - Digitalización del control de residuos  
 - Mejora en el seguimiento de operaciones (recolección, mantenimiento, personal)  
@@ -19,19 +19,19 @@ Aplicación web desarrollada con <strong>PHP (Laravel)</strong> orientada a la g
 
 ---
 
-## 🧩 Rol y aporte
+##  Mi Rol en el proyecto
 
-- Desarrollo del backend utilizando Laravel  
-- Modelado de base de datos relacional (≈39 tablas)  
-- Implementación de migraciones y arquitectura MVC  
-- Desarrollo de funcionalidades principales del sistema  
+- Modelado de base de datos relacional 
+- Implementación de migraciones y arquitectura MVC.
+- Desarrollo de backend utilizando Laravel para funcionalidades como vehículos, asistencia,  vacaciones, programaciones de rutas.
+- Integración y despliegue de la aplicación. 
 
 ---
 
 ## ⚙️ Stack tecnológico
 
 - **Backend:** PHP – Laravel  
-- **Base de datos:** SQLite  
+- **Base de datos:** PostgreSQL  
 - **Arquitectura:** MVC  
 - **Herramientas:** Git, Composer  
 
@@ -39,15 +39,14 @@ Aplicación web desarrollada con <strong>PHP (Laravel)</strong> orientada a la g
 
 ## 🚀 Funcionalidades destacadas
 
-- Gestión de personal, rutas y recorridos  
+- Gestión de personal, rutas.  
 - Programación de actividades y mantenimientos  
-- Control de vehículos y recursos  
-- Registro de incidencias y operaciones  
+- Control de vehículos   
 - Sistema estructurado mediante migraciones  
 
 ---
 
-## 🧠 Valor técnico
+## Valor técnico
 
 - Aplicación de buenas prácticas en Laravel  
 - Diseño de base de datos relacional compleja  
@@ -56,15 +55,27 @@ Aplicación web desarrollada con <strong>PHP (Laravel)</strong> orientada a la g
 
 ---
 
-## ▶️ Cómo ejecutar el proyecto
+## Cómo ejecutar el proyecto
 
 - git clone <URL_DEL_REPOSITORIO>
 - cd nombre-del-proyecto
 - composer install
 - cp .env.example .env
-- php artisan key:generate
-- php artisan migrate
-- php artisan serve
+
+## ▶️ Despliegue
+
+
+-Este proyecto fue desplegado en Railway , vinculando Github y utilizando Postgresql como motor de base de datos.
+
+<img width="1190" height="530" alt="image" src="https://github.com/user-attachments/assets/25f8785a-5b7c-484c-bb2a-4b79f10d8a2e" />
+
+
+- El enlace de la aplicación es: https://rsuproyectophplaravel-production.up.railway.app
+
+<img width="1706" height="778" alt="image" src="https://github.com/user-attachments/assets/07fdac21-4ef8-4557-a6f7-92e3eadd0e2f" />
+
+
+-Puede acceder, registrarse y navegar por el proyecto.
 
 
 ---
