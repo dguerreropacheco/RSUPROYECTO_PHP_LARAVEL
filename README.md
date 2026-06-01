@@ -5,7 +5,7 @@
 <h1 align="center">Sistema de Gestión de Residuos Sólidos (RSU)</h1>
 
 <p align="center">
-Proyecto académico web desarrollada con <strong>PHP (Laravel)</strong> orientada a la gestión eficiente de residuos sólidos, como parte de una iniciativa de <strong>Responsabilidad Social Universitaria (RSU)</strong> en equipo para el curso de TÓPICOS AVANZADOS EN DESARROLLO DE SOFTWARE.
+Proyecto académico web desarrollada con <strong>PHP (Laravel)</strong> orientada a la gestión eficiente de residuos sólidos, como parte de una iniciativa de <strong>Responsabilidad Social Universitaria (RSU)</strong> en equipo para el curso de Tópicos Avanzados en Desarrollo de Software.
 </p>
 
 ---
